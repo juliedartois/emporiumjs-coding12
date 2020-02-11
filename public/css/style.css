@@ -15789,5 +15789,21 @@ h3 {
     border-color: #dee2e6;
   }
 }
+body header .logo {
+  padding-top: 7vh;
+  padding-bottom: 7vh;
+}
+body header nav .collapse .navbar-nav .color button {
+  height: 26px;
+}
+body header .shopEmp {
+  background-color: #f3f3f3;
+}
+body header .shopEmp .container .row {
+  height: 55vh;
+}
+body header .shopEmp .container .row .col-5 img {
+  width: 450px;
+}
 
 /*# sourceMappingURL=style.css.map */

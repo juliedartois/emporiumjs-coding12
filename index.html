@@ -1,20 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>emporium.</title>
     <link rel="stylesheet" href="./public/css/style.css">
 </head>
+
 <body>
+
     <!-- Header -->
     <header>
-        <div></div>
-        <nav></nav>
+
+        <!-- Logo -->
+        <div class="logo bg-white text-center">
+            <img src="./public/img/logo.png" alt="emporium logo">
+        </div>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white py-4">
+            <a class="navbar-brand d-none" href="#">
+                <img src="./public/img/logo.png" alt="emporium logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav mx-auto text-uppercase">
+                    <a class="nav-item nav-link mx-5" href="#">Home</a>
+                    <a class="nav-item nav-link mx-5" href="#">Products</a>
+                    <a class="nav-item nav-link mx-5" href="#">Blog</a>
+                    <a class="nav-item nav-link mx-5" href="#">Elements</a>
+                    <a class="nav-item nav-link mx-5" href="#">About</a>
+                    <a class="nav-item nav-link mx-5" href="#">Contact</a>
+
+                    <div class="color ml-2 my-auto">
+                        <button class="btn btn-dark border border-light"></button>
+                        <button class="btn btn-light border border-dark"></button>
+                    </div>
+
+                    <a class="nav-item nav-link btn btn-secondary text-light ml-2 my-auto" href="#">Connexion</a>
+
+                </div>
+            </div>
+        </nav>
+
+        <!-- Shop at emporium. -->
         <div class="shopEmp">
-            <h2 class="text-danger font-weight-light">Shop at <span class="text-dark display-3 font-weight-bold">emporium.</span></h2>
-            <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my...</p>
-            <button class="btn btn-danger rounded-pill text-uppercase px-4 py-2">Sale items</button>
+            <div class="container">
+                <div class="row">
+                    <div class="col-7 my-auto">
+                        <h2 class="text-danger font-weight-light">Shop at</h2>
+                        <img src="./public/img/logo.png" alt="emporium logo" class="mt-2">
+                        <div class="container">
+                            <p class="mt-2">
+                                A wonderful serenity has taken possession of my entire soul, like these sweet mornings
+                                of spring which I enjoy with my...
+                            </p>
+                        </div>
+                        <button class="btn btn-danger rounded-pill text-uppercase px-4 py-2 mt-2">Sale items</button>
+                    </div>
+                    <div class="col-5">
+                        <img src="./public/img/slider-1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
@@ -36,4 +88,5 @@
     <!-- Footer -->
     <footer></footer>
 </body>
+
 </html>
