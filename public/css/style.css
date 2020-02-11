@@ -15789,6 +15789,9 @@ h3 {
     border-color: #dee2e6;
   }
 }
+body {
+  font-family: poppins;
+}
 body header .logo {
   padding-top: 7vh;
   padding-bottom: 7vh;
@@ -15804,6 +15807,31 @@ body header .shopEmp .container .row {
 }
 body header .shopEmp .container .row .col-5 img {
   width: 450px;
+}
+body #categories {
+  width: 100%;
+}
+body #categories .row .living .bgi {
+  height: 20vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(../../public/img/services/service-1.jpg);
+}
+body #categories .row .items .bgi {
+  height: 20vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(../../public/img/services/service-2.jpg);
+}
+body #categories .row .clothes .bgi {
+  height: 20vh;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-image: url(../../public/img/services/slider-3.jpg);
+}
+body #categories .row .col-4 .bgi hr {
+  width: 70%;
+  height: 2px;
 }
 
 /*# sourceMappingURL=style.css.map */
