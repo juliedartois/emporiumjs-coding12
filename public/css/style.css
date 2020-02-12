@@ -15887,11 +15887,25 @@ body #recentProducts .container .row .col-lg-4 .txt .row .col-4 h5 {
 body #recentProducts .container .row .col-lg-4 .txt .row .col-8 span {
   text-decoration: line-through;
 }
+body #thousands {
+  background-image: url(../../public/img/cta-bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 80vh;
+  max-width: 100vw;
+}
+body #thousands .row {
+  height: 80vh;
+}
 
 @media (max-width: 991px) {
   body header .beige .container .row .shirt img {
     margin: auto;
     width: 80vw;
+  }
+  body #recentProducts .container .row .col-lg-4:last-child {
+    margin: auto auto;
   }
 }
 
