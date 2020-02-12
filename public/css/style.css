@@ -15898,6 +15898,12 @@ body #thousands {
 body #thousands .row {
   height: 80vh;
 }
+body #infos .row .col-lg-4 {
+  padding: 20px;
+}
+body #infos .row .col-lg-4 .content {
+  height: 40vh;
+}
 
 @media (max-width: 991px) {
   body header .beige .container .row .shirt img {
@@ -15906,6 +15912,14 @@ body #thousands .row {
   }
   body #recentProducts .container .row .col-lg-4:last-child {
     margin: auto auto;
+  }
+}
+@media (max-width: 425px) {
+  body #infos .row .col-lg-4 {
+    height: 60vh;
+  }
+  body #infos .row .col-lg-4 .content {
+    height: 60vh;
   }
 }
 
