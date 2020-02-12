@@ -11,10 +11,97 @@
 <body>
 
     <!-- Header -->
-    <header></header>
+    <header>
+        <!-- Logo -->
+        <div class="logo mx-auto text-center my-5">
+            <h1 class="display-3 font-weight-bold">emporium.</h1>
+        </div>
+
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white my-2">
+            <a class="navbar-brand" href="#">
+                <h1 class="display-4 font-weight-bold d-none">emporium.</h1>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Collapse -->
+            <div class="collapse navbar-collapse text-center mx-auto" id="navbarNavAltMarkup">
+                <ul class="navbar-nav text-uppercase text-center mx-auto d-flex align-items-center">
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Elements</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item color mx-2 my-2">
+                        <button class="btn bg-light border border-dark mr-1"></button>
+                        <button class="btn bg-dark border border-light"></button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn btn-secondary text-uppercase">Connexion</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Bg Beige -->
+        <div class="beige">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 my-5 txt">
+                        <h4 class="display-4 text-danger font-weight-light">Shop at</h4>
+                        <h1 class="display-2 font-weight-bold">emporium.</h1>
+                        <p class="my-3">A wonderful serenity has taken possession of my entire soul, like these sweet
+                            mornings of spring which I enjoy with my...</p>
+                        <button class="btn btn-danger rounded-pill text-light text-uppercase mt-2">Sale items</button>
+                    </div>
+                    <div class="col-lg-6 col-md-12 shirt">
+                        <img src="./public/img/slider-1.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
     <!-- Categories -->
-    <section id="categories"></section>
+    <section id="categories" class="my-3 mx-2">
+        <div class="row no-gutters">
+            <div class="col-lg-4 col-md-12">
+                <div class="living text-center d-flex flex-column justify-content-center">
+                    <h4 class="text-light mb-0 h2">Living Room</h4>
+                    <hr class="bg-light mt-1">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <div class="items text-center d-flex flex-column justify-content-center">
+                    <h4 class="text-light mb-0 h2">Sale Items</h4>
+                    <hr class="bg-light mt-1">
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-12">
+                <div class="clothes text-center d-flex flex-column justify-content-center">
+                    <h4 class="text-light mb-0 h2">Clothes</h4>
+                    <hr class="bg-light mt-1">
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Recent Products -->
     <section id="recentProducts"></section>
