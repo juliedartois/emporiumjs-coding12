@@ -15877,6 +15877,16 @@ body #categories .row .col-lg-4 div hr {
   height: 2px;
   width: 70%;
 }
+body #recentProducts .container .row .col-lg-4 img {
+  width: 100%;
+}
+body #recentProducts .container .row .col-lg-4 .txt .row .col-4 h5 {
+  height: 70px;
+  width: 70px;
+}
+body #recentProducts .container .row .col-lg-4 .txt .row .col-8 span {
+  text-decoration: line-through;
+}
 
 @media (max-width: 991px) {
   body header .beige .container .row .shirt img {
