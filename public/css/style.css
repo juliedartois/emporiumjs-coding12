@@ -15979,6 +15979,13 @@ h3 {
 body {
   font-family: poppins;
 }
+body header .fixed-top {
+  position: fixed;
+  top: 0;
+}
+body header nav {
+  height: 101px;
+}
 body header nav .collapse .navbar-nav .color button {
   height: 26px;
   width: 26px;
