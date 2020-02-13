@@ -5,6 +5,7 @@
 
 body
     font-family: poppins
+    position: relative
 
     header
         .fixed-top
@@ -103,6 +104,44 @@ body
                         ul
                             list-style: none
 
+    #modal
+        height: 100vh
+        width: 100vw
+        z-index: 20
+        background-color: rgba(0, 0, 0, 0.5)
+        position: fixed
+        top: 0
+
+        .container
+            margin-top: 25vh
+            border-radius: 20px
+
+            .row
+                .logIn
+                    border-right: 2px solid #d4d4d4
+
+                    .row
+                        .col
+                            height: 35px
+
+                            i
+                                display: none
+
+                    form
+                        height: 296px
+
+                        button
+                            max-width: max-content
+
+                .signUp
+                    .row
+                        .col
+                            height: 35px
+
+                    form
+                        button
+                            max-width: max-content
+
 
 @media (max-width: 991px)
     body
@@ -122,6 +161,25 @@ body
                         &:last-child
                             margin: auto auto
 
+        #modal
+            .container
+                margin-top: 12vh
+
+                .row
+                    .logIn
+                        border-right: 0
+                        border-bottom: 2px solid #d4d4d4
+
+                        .row
+                            .col
+                                i
+                                    display: block
+
+                    .signUp
+                        .row
+                            .col
+                                i
+                                    display: none
 
 @media (max-width: 425px)
     body
@@ -133,3 +191,6 @@ body
                     .content
                         height: 60vh
 
+        #modal
+            .container
+                margin-top: 3vh

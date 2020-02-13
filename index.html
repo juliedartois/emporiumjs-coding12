@@ -29,7 +29,7 @@
             </button>
 
             <!-- Collapse -->
-            <div class="collapse navbar-collapse text-center mx-auto" id="navbarNavAltMarkup">
+            <div class="collapse navbar-collapse text-center mx-auto bg-white p-3" id="navbarNavAltMarkup">
                 <ul class="navbar-nav text-uppercase text-center mx-auto d-flex align-items-center">
                     <li class="nav-item">
                         <a href="" class="nav-link">Home</a>
@@ -266,7 +266,7 @@
     </section>
 
     <!-- Footer -->
-    <footer class="">
+    <footer>
         <!-- Dark -->
         <div class="bg-dark py-5">
             <div class="container">
@@ -305,39 +305,44 @@
 
         <!-- Black -->
         <div class="bg-black text-secondary text-uppercase my-0 text-center">
-            <p class="mb-0 p-4">Copyright 2020 goodlayers, all rights reserved</p>
+            <p class="mb-0 p-4">&copy;Copyright 2020 goodlayers, all rights reserved</p>
         </div>
     </footer>
 
 
     <!-- Connexion Modal -->
-    <div id="modal" style="height: 100vh; max-width: 100vw; z-index: 1; background-color: rgba(0, 0, 0, 0.5);" class="">
-        <div class="container bg-white rounded-lg">
+    <div id="modal" class="d-none">
+        <div class="container bg-white">
             <div class="row no-gutters">
-                <div class="col p-0 m-0 text-right p-5">
-                    <i class="fas fa-times fa-2x text-muted"></i>
-                </div>
-            </div>
-            <div class="row no-gutters">
-                <!-- Sign In -->
-                <div class="col-6 logIn p-5">
+                <!-- Log In -->
+                <div class="col-lg-6 col-md-12 logIn p-5">
+                    <div class="row no-gutters m-0">
+                        <div class="col p-0 m-0 text-right">
+                            <i class="fas fa-times fa-2x text-muted"></i>
+                        </div>
+                    </div>
                     <h2 class="display-4">Log In</h2>
-                    <form class="logInForm d-flex flex-column justify-content-center" style="height: 296px;">
+                    <form class="logInForm d-none flex-column justify-content-center">
                         <div class="form-group">
                             <label for="logIn1">Enter Username</label>
                             <input type="text" class="form-control" id="logIn1" aria-describedby="emailHelp"
-                                placeholder="Username">
+                            placeholder="Username">
                         </div>
                         <div class="form-group">
                             <label for="logIn2">Password</label>
                             <input type="password" class="form-control" id="logIn2" placeholder="Password">
                         </div>
-                        <button type="submit" class="btn btn-danger" style="max-width: max-content">Log In</button>
+                        <button type="submit" class="btn btn-danger">Log In</button>
                     </form>
                 </div>
 
                 <!-- Sign Up -->
-                <div class="col-6 signUp p-5">
+                <div class="col-lg-6 col-md-12 signUp p-5 border-muted">
+                    <div class="row no-gutters m-0">
+                        <div class="col p-0 m-0 text-right">
+                            <i class="fas fa-times fa-2x text-muted"></i>
+                        </div>
+                    </div>
                     <h2 class="display-4">Sign Up</h2>
                     <form class="signUpForm d-flex flex-column justify-content-center">
                         <div class="form-row">
@@ -366,7 +371,7 @@
                                 <input type="password" class="form-control" id="confPAss" placeholder="Password">
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-danger" style="max-width: max-content">Sign in</button>
+                        <button type="submit" class="btn btn-danger">Sign in</button>
                     </form>
                 </div>
             </div>

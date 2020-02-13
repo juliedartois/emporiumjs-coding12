@@ -15978,6 +15978,7 @@ h3 {
 }
 body {
   font-family: poppins;
+  position: relative;
 }
 body header .fixed-top {
   position: fixed;
@@ -16051,6 +16052,39 @@ body #infos .row .col-lg-4 .content {
 body footer .bg-dark .container .row .col-lg-4 ul {
   list-style: none;
 }
+body #modal {
+  height: 100vh;
+  width: 100vw;
+  z-index: 20;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+}
+body #modal .container {
+  margin-top: 25vh;
+  border-radius: 20px;
+}
+body #modal .container .row .logIn {
+  border-right: 2px solid #d4d4d4;
+}
+body #modal .container .row .logIn .row .col {
+  height: 35px;
+}
+body #modal .container .row .logIn .row .col i {
+  display: none;
+}
+body #modal .container .row .logIn form {
+  height: 296px;
+}
+body #modal .container .row .logIn form button {
+  max-width: max-content;
+}
+body #modal .container .row .signUp .row .col {
+  height: 35px;
+}
+body #modal .container .row .signUp form button {
+  max-width: max-content;
+}
 
 @media (max-width: 991px) {
   body header .beige .container .row .shirt img {
@@ -16060,6 +16094,19 @@ body footer .bg-dark .container .row .col-lg-4 ul {
   body #recentProducts .container .row .col-lg-4:last-child {
     margin: auto auto;
   }
+  body #modal .container {
+    margin-top: 12vh;
+  }
+  body #modal .container .row .logIn {
+    border-right: 0;
+    border-bottom: 2px solid #d4d4d4;
+  }
+  body #modal .container .row .logIn .row .col i {
+    display: block;
+  }
+  body #modal .container .row .signUp .row .col i {
+    display: none;
+  }
 }
 @media (max-width: 425px) {
   body #infos .row .col-lg-4 {
@@ -16067,6 +16114,9 @@ body footer .bg-dark .container .row .col-lg-4 ul {
   }
   body #infos .row .col-lg-4 .content {
     height: 60vh;
+  }
+  body #modal .container {
+    margin-top: 3vh;
   }
 }
 
