@@ -16043,6 +16043,19 @@ body #thousands {
 body #thousands .row {
   height: 80vh;
 }
+body #carousel .container .row {
+  overflow: hidden;
+}
+body #carousel .container .row .col-lg-3 img {
+  width: 100%;
+}
+body #carousel .container .row .col-lg-3 .txt .row .col-4 h5 {
+  height: 70px;
+  width: 70px;
+}
+body #carousel .container .row .col-lg-3 .txt .row .col-8 span {
+  text-decoration: line-through;
+}
 body #infos .row .col-lg-4 {
   padding: 20px;
 }

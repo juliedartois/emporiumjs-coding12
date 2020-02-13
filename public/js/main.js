@@ -103,3 +103,38 @@ cross2.addEventListener('click', () => {
     body.style.zIndex = '0';
     nav.classList.remove('d-none')
 });
+
+
+// Carousel
+let slide1 = document.getElementsByClassName('slide1')[0];
+let slide2 = document.getElementsByClassName('slide2')[0];
+let slide3 = document.getElementsByClassName('slide3')[0];
+let slide4 = document.getElementsByClassName('slide4')[0];
+
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+    showSlides(slideIndex += n);
+};
+
+function currentSlide(n) {
+    showSlides(slideIndex = n);
+};
+
+function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("item");
+    let dots = document.getElementsByClassName("dot");
+
+    if (n > slides.length) { slideIndex = 1 };
+    if (n < 1) { slideIndex = slides.length };
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+    };
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    };
+    slides[slideIndex - 1].style.display = "block";
+    dots[slideIndex - 1].className += " active";
+}
