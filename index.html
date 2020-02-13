@@ -54,7 +54,7 @@
                         <button class="btn bg-dark border border-light"></button>
                     </li>
                     <li class="nav-item">
-                        <button class="btn btn-secondary text-uppercase">Connexion</button>
+                        <button class="btn btn-secondary text-uppercase">Connection</button>
                     </li>
                 </ul>
             </div>
@@ -308,6 +308,70 @@
             <p class="mb-0 p-4">Copyright 2020 goodlayers, all rights reserved</p>
         </div>
     </footer>
+
+
+    <!-- Connexion Modal -->
+    <div id="modal" style="height: 100vh; max-width: 100vw; z-index: 1; background-color: rgba(0, 0, 0, 0.5);" class="">
+        <div class="container bg-white rounded-lg">
+            <div class="row no-gutters">
+                <div class="col p-0 m-0 text-right p-5">
+                    <i class="fas fa-times fa-2x text-muted"></i>
+                </div>
+            </div>
+            <div class="row no-gutters">
+                <!-- Sign In -->
+                <div class="col-6 logIn p-5">
+                    <h2 class="display-4">Log In</h2>
+                    <form class="logInForm d-flex flex-column justify-content-center" style="height: 296px;">
+                        <div class="form-group">
+                            <label for="logIn1">Enter Username</label>
+                            <input type="text" class="form-control" id="logIn1" aria-describedby="emailHelp"
+                                placeholder="Username">
+                        </div>
+                        <div class="form-group">
+                            <label for="logIn2">Password</label>
+                            <input type="password" class="form-control" id="logIn2" placeholder="Password">
+                        </div>
+                        <button type="submit" class="btn btn-danger" style="max-width: max-content">Log In</button>
+                    </form>
+                </div>
+
+                <!-- Sign Up -->
+                <div class="col-6 signUp p-5">
+                    <h2 class="display-4">Sign Up</h2>
+                    <form class="signUpForm d-flex flex-column justify-content-center">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="fName">First Name</label>
+                                <input type="text" class="form-control" id="fName" placeholder="First Name">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="lName">Last Name</label>
+                                <input type="text" class="form-control" id="lName" placeholder="Last Name">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                                <label for="inputEmail4">Email Address</label>
+                                <input type="text" class="form-control" id="inputEmail4" placeholder="Email">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="password">Password</label>
+                                <input type="password" class="form-control" id="password" placeholder="Password">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="confPAss">Confirm Password</label>
+                                <input type="password" class="form-control" id="confPAss" placeholder="Password">
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-danger" style="max-width: max-content">Sign in</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
     <!-- js -->
