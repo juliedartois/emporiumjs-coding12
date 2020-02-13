@@ -5,19 +5,49 @@ let beige = document.getElementsByClassName('beige')[0];
 let menu = document.getElementsByClassName('navbar-toggler')[0];
 let menuDrop = document.getElementsByClassName('collapse')[0];
 
-window.addEventListener('scroll', () => {
-    if (window.scrollY >= 190) {
-        logoNav.classList.remove('d-none');
-        nav.classList.add('fixed-top');
-        nav.style.borderBottom = '2px lightgray solid';
-        beige.style.marginTop = '158px';
-    } else if (window.scrollY < 190) {
-        logoNav.classList.add('d-none');
-        nav.classList.remove('fixed-top');
-        nav.style.border = '0px';
-        beige.style.marginTop = '0px';
-    };
-});
+if (window.innerWidth <= 425) {
+    window.addEventListener('scroll', () => {
+        if (window.scrollY >= 146) {
+            logoNav.classList.remove('d-none');
+            nav.classList.add('fixed-top');
+            nav.style.borderBottom = '2px lightgray solid';
+            beige.style.marginTop = '150px';
+        } else if (window.scrollY < 146) {
+            logoNav.classList.add('d-none');
+            nav.classList.remove('fixed-top');
+            nav.style.border = '0px';
+            beige.style.marginTop = '0px';
+        };
+    });
+} else if (window.innerWidth <= 991) {
+    window.addEventListener('scroll', () => {
+        if (window.scrollY >= 161) {
+            logoNav.classList.remove('d-none');
+            nav.classList.add('fixed-top');
+            nav.style.borderBottom = '2px lightgray solid';
+            beige.style.marginTop = '150px';
+        } else if (window.scrollY < 161) {
+            logoNav.classList.add('d-none');
+            nav.classList.remove('fixed-top');
+            nav.style.border = '0px';
+            beige.style.marginTop = '0px';
+        };
+    })
+} else {
+    window.addEventListener('scroll', () => {
+        if (window.scrollY >= 182) {
+            logoNav.classList.remove('d-none');
+            nav.classList.add('fixed-top');
+            nav.style.borderBottom = '2px lightgray solid';
+            beige.style.marginTop = '150px';
+        } else if (window.scrollY < 182) {
+            logoNav.classList.add('d-none');
+            nav.classList.remove('fixed-top');
+            nav.style.border = '0px';
+            beige.style.marginTop = '0px';
+        };
+    });
+};
 
 menu.addEventListener('click', () => {
     menuDrop.style.zIndex = '1'
@@ -27,7 +57,6 @@ menu.addEventListener('click', () => {
 let connect = document.getElementsByClassName('btn-secondary')[0];
 let modal = document.getElementById('modal');
 let body = document.getElementsByTagName('body')[0];
-modal.style.maxHeight = `${window.innerHeight - nav.offsetHeight}`;
 
 connect.addEventListener('click', () => {
     modal.classList.remove('d-none');
