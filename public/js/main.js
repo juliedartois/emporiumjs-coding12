@@ -114,20 +114,33 @@ cross2.addEventListener('click', () => {
 
 // // Carousel
 const track = document.querySelector('.carousel__track');
-const slides = Array.from(track.children);
+const slides = [...document.querySelectorAll('.carousel__track .carousel__slide')];
 const prevBtn = document.querySelector('.carousel__button--left');
 const nextBtn = document.querySelector('.carousel__button--right');
 const dotsNav = document.querySelector('.carousel__nav');
 const dots = Array.from(dotsNav.children);
-const slideWidth = slides[0].getBoundingClientRect().width;
+const slideWidth = slides[0].offsetWidth;
+console.log(slideWidth);
 
 const setSlidePosition = (slide, index) => {  // Arrange slides next to one another
-    slide.style.left = slideWidth * index  + 'px';
+    slide.style.left = `${slideWidth * index}px`;
 };
-slides.forEach(setSlidePosition);
+
+
+// for (let i = 0; i < slides.length; i++) {
+//     console.log(slides[i].target);
+//     // slides[i].setSlidePosition(slides[i], i);
+// };
+
+
+// slides.forEach((el, i) => {
+//     setSlidePosition(el, i)
+// })
+
+// slides.forEach(setSlidePosition);
 
 const moveToSlide = (track, currentSlide, targetSlide) => {
-    track.style.transform = `translateX(-${targetSlide.style.left})`;
+    track.style.transform = `translateX(-${slides.indexOf(targetSlide) * slideWidth}px)`;
     currentSlide.classList.remove('current-slide');
     targetSlide.classList.add('current-slide');
 };
@@ -140,7 +153,7 @@ const updateDots = (currentDot, targetDot) => {
 dotsNav.addEventListener('click', e => {  // click indicator => move to slide n
     const targetDot = e.target.closest('button');  // which indicator clicked ?
 
-    if (!targetDot) return;
+    if (!targetDot || targetDot.classList.contains('current-slide')) return;
 
     const currentSlide = track.querySelector('.current-slide');
     const currentDot = dotsNav.querySelector('.current-slide');
