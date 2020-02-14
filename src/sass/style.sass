@@ -3,17 +3,6 @@
 @import './_variables'
 @import '../../node_modules/bootstrap/scss/bootstrap.scss'
 
-
-
-@-webkit-keyframes slide
-    100%
-    left: 0
-
-@keyframes slide
-    100%
-        left: 0
-
-
 body
     font-family: poppins
     position: relative
@@ -150,14 +139,16 @@ body
                     .current-slide
                         background: rgba(0, 0, 0, .75)
 
+                    .md
+                        display: none
+
+                    .sm
+                        display: none
 
     #infos
         .row
             .col-lg-4
                 padding: 20px
-
-                .content
-                    height: 40vh
 
     footer
         .bg-dark
@@ -224,6 +215,21 @@ body
                         &:last-child
                             margin: auto auto
 
+        #carousel
+            .container
+                .carousel
+                    .carousel__track-container
+                        .carousel__track
+                            .carousel__slide
+                                width: 50%
+
+                    .carousel__nav
+                        .carousel__indicator
+                            cursor: pointer
+
+                        .md
+                            display: block
+
         #modal
             .container
                 margin-top: 12vh
@@ -249,10 +255,22 @@ body
         #infos
             .row
                 .col-lg-4
-                    height: 60vh 
+                    height: 60vh
 
-                    .content
-                        height: 60vh
+        #carousel
+            .container
+                .carousel
+                    .carousel__track-container
+                        .carousel__track
+                            .carousel__slide
+                                min-width: 100%
+
+                    .carousel__nav
+                        .carousel__indicator
+                            cursor: pointer
+
+                        .sm
+                            display: block
 
         #modal
             .container

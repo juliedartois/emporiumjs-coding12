@@ -15976,14 +15976,6 @@ h3 {
     border-color: #dee2e6;
   }
 }
-@-webkit-keyframes slide {
-  left: 0;
-}
-@keyframes slide {
-  100% {
-    left: 0;
-  }
-}
 body {
   font-family: poppins;
   position: relative;
@@ -16096,11 +16088,14 @@ body #carousel .container .carousel .carousel__nav .carousel__indicator {
 body #carousel .container .carousel .carousel__nav .current-slide {
   background: rgba(0, 0, 0, 0.75);
 }
+body #carousel .container .carousel .carousel__nav .md {
+  display: none;
+}
+body #carousel .container .carousel .carousel__nav .sm {
+  display: none;
+}
 body #infos .row .col-lg-4 {
   padding: 20px;
-}
-body #infos .row .col-lg-4 .content {
-  height: 40vh;
 }
 body footer .bg-dark .container .row .col-lg-4 ul {
   list-style: none;
@@ -16147,6 +16142,15 @@ body #modal .container .row .signUp form button {
   body #recentProducts .container .row .col-lg-4:last-child {
     margin: auto auto;
   }
+  body #carousel .container .carousel .carousel__track-container .carousel__track .carousel__slide {
+    width: 50%;
+  }
+  body #carousel .container .carousel .carousel__nav .carousel__indicator {
+    cursor: pointer;
+  }
+  body #carousel .container .carousel .carousel__nav .md {
+    display: block;
+  }
   body #modal .container {
     margin-top: 12vh;
   }
@@ -16165,8 +16169,14 @@ body #modal .container .row .signUp form button {
   body #infos .row .col-lg-4 {
     height: 60vh;
   }
-  body #infos .row .col-lg-4 .content {
-    height: 60vh;
+  body #carousel .container .carousel .carousel__track-container .carousel__track .carousel__slide {
+    min-width: 100%;
+  }
+  body #carousel .container .carousel .carousel__nav .carousel__indicator {
+    cursor: pointer;
+  }
+  body #carousel .container .carousel .carousel__nav .sm {
+    display: block;
   }
   body #modal .container {
     margin-top: 3vh;
