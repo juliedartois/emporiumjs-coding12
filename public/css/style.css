@@ -16024,6 +16024,10 @@ body #categories .row .col-lg-4 div hr {
 }
 body #recentProducts .container .row .col-lg-4 img {
   width: 100%;
+  transition: transform 0.3s;
+}
+body #recentProducts .container .row .col-lg-4 img:hover {
+  transform: scale(1.1);
 }
 body #recentProducts .container .row .col-lg-4 .txt .row .col-4 h5 {
   height: 70px;
