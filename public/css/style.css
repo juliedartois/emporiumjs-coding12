@@ -16086,7 +16086,7 @@ body #carousel .container .carousel .carousel__nav .carousel__indicator {
   cursor: pointer;
 }
 body #carousel .container .carousel .carousel__nav .current-slide {
-  background: rgba(0, 0, 0, 0.75);
+  background: #969696bf;
 }
 body #carousel .container .carousel .carousel__nav .md {
   display: none;
@@ -16143,6 +16143,7 @@ body #modal .container .row .signUp form button {
     margin: auto auto;
   }
   body #carousel .container .carousel .carousel__track-container .carousel__track .carousel__slide {
+    height: 100%;
     width: 50%;
   }
   body #carousel .container .carousel .carousel__nav .carousel__indicator {

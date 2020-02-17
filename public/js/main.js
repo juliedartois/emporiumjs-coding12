@@ -104,7 +104,7 @@ cross2.addEventListener('click', () => {
     nav.classList.remove('d-none')
 });
 
-// Carousel
+// // Carousel
 const track = document.querySelector('.carousel__track');
 const slides = [...document.querySelectorAll('.carousel__track .carousel__slide')];
 const prevBtn = document.querySelector('.carousel__button--left');
@@ -112,6 +112,8 @@ const nextBtn = document.querySelector('.carousel__button--right');
 const dotsNav = document.querySelector('.carousel__nav');
 const dots = Array.from(dotsNav.children);
 const slideWidth = slides[0].offsetWidth;
+
+
 
 const setSlidePosition = (slide, index) => {  // Arrange slides next to one another
     slide.style.left = `${slideWidth * index}px`;
@@ -140,4 +142,61 @@ dotsNav.addEventListener('click', e => {  // click indicator => move to slide n
 
     moveToSlide(track, currentSlide, targetSlide);
     updateDots(currentDot, targetDot);
+});
+
+
+// // Color change
+let white = document.getElementsByTagName('button')[1];
+let black = document.getElementsByTagName('button')[2];
+
+let topLogo = document.getElementsByTagName('div')[0];
+let collapse = document.getElementsByClassName('collapse')[0];
+let recentProds = document.getElementById('recentProducts');
+let carousel = document.getElementById('carousel');
+let modalBg = document.getElementsByClassName('modalBg')[0];
+
+white.addEventListener('click', () => {
+    body.classList.remove('bg-black');
+
+    nav.classList.add('navbar-light');
+    nav.classList.remove('navbar-dark');
+    nav.classList.remove('bg-black');
+    nav.classList.add('bg-white');
+    nav.classList.remove('text-light');
+
+    collapse.classList.remove('bg-black');
+    collapse.classList.add('bg-white');
+
+    topLogo.classList.remove('text-light');
+
+    recentProds.classList.remove('text-light');
+
+    carousel.classList.remove('text-light');
+
+    modalBg.classList.add('bg-white');
+    modalBg.classList.remove('bg-black');
+    modalBg.classList.remove('text-light');
+});
+
+black.addEventListener('click', () => {
+    body.classList.add('bg-black');
+
+    nav.classList.remove('navbar-light');
+    nav.classList.add('navbar-dark');
+    nav.classList.add('bg-black');
+    nav.classList.remove('bg-white');
+    nav.classList.add('text-light');
+
+    collapse.classList.remove('bg-white');
+    collapse.classList.add('bg-black');
+
+    topLogo.classList.add('text-light');
+
+    recentProds.classList.add('text-light');
+
+    carousel.classList.add('text-light');
+
+    modalBg.classList.remove('bg-white');
+    modalBg.classList.add('bg-black');
+    modalBg.classList.add('text-light');
 });
