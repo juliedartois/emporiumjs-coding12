@@ -63,12 +63,13 @@ body
         .container
             .row
                 .col-lg-4
+                    transition: transform .3s
+
+                    &:hover
+                        transform: scale(1.1)
+
                     img
                         width: 100%
-                        transition: transform .3s
-
-                        &:hover
-                            transform: scale(1.1)
 
                     .txt
                         .row

@@ -16022,12 +16022,14 @@ body #categories .row .col-lg-4 div hr {
   height: 2px;
   width: 70%;
 }
-body #recentProducts .container .row .col-lg-4 img {
-  width: 100%;
+body #recentProducts .container .row .col-lg-4 {
   transition: transform 0.3s;
 }
-body #recentProducts .container .row .col-lg-4 img:hover {
+body #recentProducts .container .row .col-lg-4:hover {
   transform: scale(1.1);
+}
+body #recentProducts .container .row .col-lg-4 img {
+  width: 100%;
 }
 body #recentProducts .container .row .col-lg-4 .txt .row .col-4 h5 {
   height: 70px;
