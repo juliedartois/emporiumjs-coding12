@@ -64,28 +64,6 @@ connect.addEventListener('click', () => {
     nav.classList.add('d-none')
 });
 
-// Sign In
-let logIn = document.getElementsByTagName('h2')[0];
-let logInForm = document.getElementsByClassName('logInForm')[0];
-
-logIn.addEventListener('click', () => {
-    logInForm.classList.remove('d-none');
-    logInForm.classList.add('d-flex');
-    signUpForm.classList.add('d-none');
-    signUpForm.classList.remove('d-flex');
-});
-
-// Sign Up
-let signUp = document.getElementsByTagName('h2')[1];
-let signUpForm = document.getElementsByClassName('signUpForm')[0];
-
-signUp.addEventListener('click', () => {
-    signUpForm.classList.remove('d-none');
-    signUpForm.classList.add('d-flex');
-    logInForm.classList.add('d-none');
-    logInForm.classList.remove('d-flex');
-});
-
 // Close
 let cross1 = document.getElementsByClassName('fa-times')[0];
 let cross2 = document.getElementsByClassName('fa-times')[1];
